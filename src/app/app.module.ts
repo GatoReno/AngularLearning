@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { OverLayCardComponent } from './components/over-lay-card/over-lay-card.component';
 import { StepperComponent } from './components/stepper/stepper.component';
+import { BodyComponent } from './components/body/body.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StepperComponent } from './components/stepper/stepper.component';
     FooterComponent,
     CardComponent,
     OverLayCardComponent,
-    StepperComponent
+    StepperComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule

@@ -9,7 +9,7 @@ import { APP_ROUTING } from './app.routes';
 
 // SERVICES
 
-
+import { ClientService } from './services/clients.service';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -22,6 +22,7 @@ import { BodyComponent } from './components/body/body.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ClientsComponent } from './components/clients/clients.component';
+import { ClientComponent } from './components/client/client.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +35,16 @@ import { ClientsComponent } from './components/clients/clients.component';
     BodyComponent,
     HomeComponent,
     AboutComponent,
-    ClientsComponent
+    ClientsComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    ClientService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

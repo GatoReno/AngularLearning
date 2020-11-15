@@ -2,7 +2,7 @@
 <h1>  Clientes  </h1>
 
 <div class="card-columns" >
-    <div class="card" *ngFor="let cli of clients">
+    <div class="card" *ngFor="let cli of clients;">
 
         <!-- Card image -->
         <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
@@ -16,7 +16,9 @@
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
           <!-- Button -->
-          <a href="#" class="btn btn-primary">Button</a>
+          <!-- <a [routerLink]="['/client',cli.id]" class="btn btn-primary">See client</a> -->
+
+          <button (click)="goToClient(cli.id)" class="btn btn-primary">See client</button>
       
         </div>
       

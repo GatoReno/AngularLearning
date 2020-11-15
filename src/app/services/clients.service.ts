@@ -19,11 +19,11 @@ export class ClientService {
         estado: 'string'
     },
     {
-        id: '1',
-        id_cartera: 'string',
-        created_at: 'string',
-        status: 'string',
-        name: 'string',
+        id: '12',
+        id_cartera: 'string2',
+        created_at: 'string2',
+        status: 'string2',
+        name: 'string2',
         escolaridad: 'string',
         ocupacion: 'string',
         mail: 'string',
@@ -36,8 +36,10 @@ export class ClientService {
     ];
 
     constructor(){
-       
+       console.log(this.clients)
     }
+
+    
 
     getClients(){
         return this.clients;
